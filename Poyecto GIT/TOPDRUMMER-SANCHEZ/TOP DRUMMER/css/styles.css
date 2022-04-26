@@ -26,7 +26,7 @@ html{
     font-family: raggedways;
     src: url(../fonts/Raggedways\ Regular.otf);
 }
-/*estilos h1 h2 y h3*/
+/*estilos h1 h2 y h3*/ 
 h1{
     background-color: #1B1A17;
     color: #F0A500;
@@ -79,6 +79,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+/*transformacion*/
 .header__menu{
     color: #E45826;
     font-size: 30px;
@@ -90,6 +91,10 @@ header{
     justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: transform 2s;
+}
+.header__menu:hover{
+    transform: scaleY(1.4);
 }
 /* estilos del main index*/
 .cuerpo{
@@ -219,6 +224,39 @@ footer{
     text-decoration: none;
     font-size: large;
     margin-left: 42px;
+}
+/*transicion writeus*/
+.importante{
+    margin: auto;
+    color: #1B1A17;
+    text-align: start;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fieldset{
+    margin: auto;
+    width: 50%;
+    margin-top: 25px;
+    margin-bottom: 15PX;
+    background-color: #1B1A17;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #E45826;
+    border-style: solid;
+}
+.fieldset>p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fieldset>div{
+    margin-top: 15px;
+}
+.fieldset input{
+    transition: transform 2s;
+}
+fieldset input:focus{
+    transform: scale(1.6);
 }
 
 @media screen and (min-width: 768px){
