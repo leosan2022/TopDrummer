@@ -15,9 +15,9 @@ html{
 }
 .contenedor >*{
     border-color: 2px solid rgb(45, 185, 45);
+    background-color: #1B1A17;
 }
 
-}
 @font-face {
     font-family: "BIZUDP";
     src: url(../fonts/BIZUDPMincho-Regular.ttf);
@@ -56,6 +56,16 @@ h3{
     border-radius: 50px;
     border-style: groove;
 }
+h4{
+    background-color:#E45826;
+    color:#F0A500;
+    -webkit-text-stroke-color: #1B1A17;
+    font-size: 25px;
+    font-family: BIZUDP;
+    text-align: center;
+    border-radius: 50px;
+    border-style: groove;
+}
 /*estilos del header*/
 .header__prin{
     display: flex;
@@ -79,22 +89,22 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-/*transformacion*/
+/*bootstrap*/
+.menu{
+background-color: #1B1A17;
+}
 .header__menu{
     color: #E45826;
+    width: 120%;
+    background-color: #1B1A17;
     font-size: 30px;
     font-family: BIZUDP;
     text-align: left;
-    margin-left: 20px;
     text-decoration: none;
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 10px;
-    transition: transform 2s;
-}
-.header__menu:hover{
-    transform: scaleY(1.4);
 }
 /* estilos del main index*/
 .cuerpo{
@@ -156,25 +166,29 @@ main{
     display: flex;
     justify-content: center;
 }
+.pag__img{
+    display: flex;
+    justify-content: space-between;
+}
 .pagesimg{
-    max-width: 100px;
-    width: 200px;
-    height: 180px;
-    margin-left: 42px;
+    max-width: 300px;
+    width: 400px;
+    height: 280px;
+    margin-left: 45%;
     border-style: solid;
     border-color: #E45826;
 }
 .pages__supersaleimg{
     width: 550px;
     height: 380px;
-    margin-left: 42px;
+    margin-left: auto;
     border-style: solid;
     border-color: #E45826;
 }
 /*estilos del footer*/
 .footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #1B1A17;
     font-family: BIZUDP;
     color:#E45826;
@@ -190,7 +204,7 @@ footer{
     border-style: solid;
     border-color: #E45826;
     margin-bottom: 10px;
-    margin-left: 42px;
+    margin-left: auto;
 }
 .footervisit{
     color:#E45826;
@@ -201,6 +215,7 @@ footer{
 .table{
     background-color:#1B1A17;
     font-size: large;
+    color: #E45826;
     border-style: solid;
     border-color: #E45826;
     margin-left: 42px;
@@ -223,7 +238,7 @@ footer{
     color:#E45826;
     text-decoration: none;
     font-size: large;
-    margin-left: 42px;
+    margin: 42px;
 }
 /*transicion writeus*/
 .importante{
@@ -235,42 +250,32 @@ footer{
 }
 .fieldset{
     margin: auto;
-    width: 50%;
+    width: 120%;
     margin-top: 25px;
     margin-bottom: 15PX;
     background-color: #1B1A17;
-    font-size: large;
+    font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
     text-align: center;
     color: #E45826;
     border-style: solid;
 }
-.fieldset>p{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.fieldset>div:hover{
+    transform: scaleY(1.3);
 }
 .fieldset>div{
     margin-top: 15px;
-}
-.fieldset input{
     transition: transform 2s;
 }
-fieldset input:focus{
-    transform: scale(1.6);
+.colorbotton{
+    color: #1B1A17;
+    background-color: #E45826;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-color: #E45826;
+    margin-bottom: 15px;
 }
-
-@media screen and (min-width: 768px){
-    header, main, footer{
-        grid-column: 1 / span 6;
-    }
-    .contenedor{
-        grid-template-rows: repeat(7, auto);
-}
-
-@media screen and (min-width: 368px){
-    header, main, footer{
-        grid-column: 1 / span 6;
-    }
-    .contenedor{
-        grid-template-rows: repeat(7, auto);
-}
+  
