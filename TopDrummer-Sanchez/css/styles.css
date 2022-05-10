@@ -74,6 +74,12 @@ h4{
     margin-left: 90%;
 }
 /*estilos del header*/
+.header{
+    background-color: #1B1A17;
+}
+header{
+    grid-column: 1 / span 6;
+}
 .header__prin{
     display: flex;
     justify-content:space-around;
